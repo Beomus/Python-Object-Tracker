@@ -7,6 +7,7 @@ Simple object tracker using Python and OpenCV
 
 ## TODO(Improvements)
 - Specify read from Video or capture Webcam: 
+		
 		`import argparse
 		
 		ap = argparse.ArgumentParser()
