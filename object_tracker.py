@@ -12,8 +12,8 @@ buffer_size = 64
 
 
 # Color range: this will be the color range of the object you are tracking
-LOWER = (29, 86, 6)
-UPPER = (64, 255, 255)
+LOWER = (255, 255, 255) #this is grey and this is for green(29, 86, 6)
+UPPER = (198, 198, 198) #this is white and this is for upper green(64, 255, 255)
 pos = deque(maxlen=buffer_size)
 
 vs = VideoStream(scr=0).start()
@@ -27,7 +27,7 @@ while run:
 		run = False
 
 	# resizing the frame so we can achieve more fps and read easily
-	frame = imutils.resize(frame, width=700)
+	frame = imutils.resize(frame, width=1000)
 	blur = cv2.GaussianBlur(frame, (5, 5), 0)
 	# convert to HSV color
 	# [INFO]: https://en.wikipedia.org/wiki/HSL_and_HSV
