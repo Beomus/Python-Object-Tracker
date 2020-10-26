@@ -1,11 +1,11 @@
-# Object Tracker 
+# **Object Tracker**
 Simple object tracker using Python and OpenCV
 
-## Installation 
+## **Installation**
 
 `$ pip install opencv-python imutils`
 
-## TODO(Improvements)
+## **TODO**:
 - Specify read from Video or capture Webcam: 
 		
 	`import argparse`
